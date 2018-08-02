@@ -10,5 +10,11 @@
     "tranlab"
   ],
   "author": "Tamara",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "firebase-tools": "^4.0.2"
+  },
+  "devDependencies": {
+    "materialize": "^1.0.0"
+  }
 }
