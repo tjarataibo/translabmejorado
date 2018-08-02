@@ -1,0 +1,14 @@
+{
+  "name": "retotranslab",
+  "version": "0.0.1",
+  "description": "Mejora de proyecto translab",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "tranlab"
+  ],
+  "author": "Tamara",
+  "license": "ISC"
+}
