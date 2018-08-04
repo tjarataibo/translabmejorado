@@ -1,0 +1,11 @@
+body{
+    background-color:rgb(196, 208, 208);
+    }
+section{
+    background-color: #F5AC36;
+}
+.circle{
+    max-width: 40% !important;
+    height: 30%;
+    margin:2em;
+}

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <!-- Link para íconos -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../translab/src/css/inicio.css">
+  <link rel="stylesheet" href="../translab/src/css/perfil.css">
   <title>Translab</title>
   
 </head>
@@ -21,14 +21,49 @@
                 </div>
         </nav>
 
-          <!--Despliegue menú-->
-          <ul id="slide-out" class="sidenav">
+        <!--Despliegue menú-->
+        <ul id="slide-out" class="sidenav">
               <li><a href="../translab/saldo.html"><i class="material-icons">attach_money</i>Ver saldo</a></li>
               <li><a href="../translab/tarifa.html"><i class="material-icons">apps</i>Calcular Tarifa</a></li>
               <li><a href="../translab/perfil.html"><i class="material-icons">person</i>Perfil</a></li>
               <li><a href="../translab/preguntas.html"><i class="material-icons">description</i>Preguntas Frecuentes</a></li>
               <li><a href="../translab/inicio.html"><i class="material-icons">arrow_forward</i>Home</a></li>
-          </ul>
+        </ul>
+  
+         <!--Perfil-->
+        <section class="center-align" >
+            <a href="#user"><img src="https://imagini.teotrandafir.com/2016/05/poza-de-profil.jpg" alt="" class="circle responsive-img">
+          <!-- <a href="#user"><img class="circle responsive-img imgperfil" src="https://imagini.teotrandafir.com/2016/05/poza-de-profil.jpg"></a> -->
+        </section>
+        <div class="container">
+           <div class="row">
+              <div class="grey lighten-5"></div>
+                   <div class="input-field col s12 white">
+                    <input id="e-mail" type="text" class="validate">
+                    <label for="number">Correo</label>
+                   </div>
+                   <div class="input-field col s12">
+                        <input id="number" type="text" class="validate">
+                        <label for="password">Número de tarjeta</label>
+                   </div>
+                   <div class="col s12 center">
+                        <a class="card-panel teal waves-effect waves-light btn-large amber darken-2" href="../translab/preguntas.html">AGREGAR TARJETA</a> 
+                   </div>
+                   <div class="input-field col s12 white">
+                        <input id="numberOne" type="text" class="validate">
+                        <label for="password" >Número de tarjeta</label>
+                   </div>
+                   <div class="input-field col s12 white">
+                      <input id="numberTwo" type="text" class="validate">
+                      <label for="password" >Número de tarjeta</label>
+                 </div>
+                 <div class="input-field col s12 white">
+                    <input id="numberThree" type="text" class="validate">
+                    <label for="password" >Número de tarjeta</label>
+               </div>
+              </div> 
+           </div>
+        </div>
 
        
 
@@ -50,6 +85,6 @@
    };
    firebase.initializeApp(config);
  </script>
- <script src="../translab/src/js/inicio.js"></script>
+ <script src="../translab/src/js/perfil.js"></script>
 </body>
 </html>
