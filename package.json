@@ -12,9 +12,11 @@
   "author": "Tamara",
   "license": "ISC",
   "dependencies": {
-    "firebase-tools": "^4.0.2"
+    "firebase-tools": "^4.0.2",
+    "materialize-css": "^1.0.0-rc.2"
   },
   "devDependencies": {
+    "ember-cli-materialize": "^0.22.0-beta.0",
     "materialize": "^1.0.0"
   }
 }

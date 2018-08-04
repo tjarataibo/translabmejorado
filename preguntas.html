@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Link Materialize para css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!-- Link para íconos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../translab/src/css/inicio.css">
+  <title>Translab</title>
+  
+</head>
+<body>
+        <!--Menú-->
+        <nav class="grey darken-3"> 
+                <div id="barra"> 
+                    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+                    
+                </div>
+        </nav>
+
+         <!--Despliegue menú-->
+         <ul id="slide-out" class="sidenav">
+                <li><a href="../perfil/perfil.html"><i class="material-icons">attach_money</i>Ver saldo</a></li>
+                <li><a href="../muro/muro.html"><i class="material-icons">apps</i>Calcular Tarifa</a></li>
+                <li><a href="../buscadorClinicas/buscadorClinica.html"><i class="material-icons">person</i>Perfil</a></li>
+                <li><a href="https://red-social-cc22a.firebaseapp.com"><i class="material-icons">description</i>Preguntas Frecuentes</a></li>
+                <li><a href="https://red-social-cc22a.firebaseapp.com"><i class="material-icons">arrow_forward</i>Home</a></li>
+            </ul>
+        <section>
+
+        
+
+ <!-- Link Jquery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <!-- Link Materialize para JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+ <!-- Link para firebase-->
+ <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+ <script>
+   // Initialize Firebase
+   var config = {
+     apiKey: "AIzaSyBW-LzUp2n2WdLw1T_aOpFzwR4ZZkY-Bms",
+     authDomain: "translab-f6a7f.firebaseapp.com",
+     databaseURL: "https://translab-f6a7f.firebaseio.com",
+     projectId: "translab-f6a7f",
+     storageBucket: "translab-f6a7f.appspot.com",
+     messagingSenderId: "1093714539205"
+   };
+   firebase.initializeApp(config);
+ </script>
+ <script src="../translab/src/js/inicio.js"></script>
+</body>
+</html>

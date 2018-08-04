@@ -1,0 +1,52 @@
+/* html,
+body {
+    height: 100%;
+    background-color: rgb(52, 54, 54)
+}
+    
+body {
+    display: table-cell;
+    vertical-align: middle;
+} */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(52, 54, 54);
+  }
+#tittle{
+    color: #F5AC36;
+    
+}
+main {
+    flex: 1 0 auto;
+  }
+.brand-logo >img {
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+}
+/* Menu - profile */
+.bg-card-user {
+	padding: 15px 0;
+}
+#truncate >img {
+	width: 180px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+i.iconis {
+    font-size: 1em!important;
+    margin-top: 8px;
+}
+.login {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(230, 226, 226);
+    padding: 20px;
+    display: table-cell;
+}
+#inicio{
+    background-color: #F5AC36;
+    color: black;
+}
