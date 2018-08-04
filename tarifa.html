@@ -30,7 +30,40 @@
             <li><a href="../translab/inicio.html"><i class="material-icons">arrow_forward</i>Home</a></li>
         </ul>
 
+        <!--Costo del pasaje y el saldo de la tarjeta con el costo del pasaje ya descontado-->
+        <div class="container">
+           <div class="row">
+              <div class="input-field col s12">
+                  <input id="numeroTarjeta" type="text" class="validate">
+                  <label for="password">Número de tarjeta</label>
+             </div>
+              <div class="input-field col s6 white">
+                  <select id="selectHora">
+                    <option value="" disabled selected>Horario</option>
+                    <option value="0.630">Tarifa Baja [6:00 a 6:29 hrs][20:45 a 23:00 hrs]</option>
+                    <option value="0.680">Tarifa Media [06:30 a 06:59 hrs][09:00 a 17:59 hrs][20:00 a 20:44 hrs]</option>
+                    <option value="0.760">Tarifa Alta [7:00 a 8:59 hrs][18:00 a 19:59 hrs]</option>
+                  </select>
+                  <label>Tarifa</label>
+              </div>
+              <div class="input-field col s6 white">
+                  <select id="selectTarjeta">
+                    <option value="" disabled selected>Tarjeta</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                  </select>
+                  <label>Tarjeta</label>
+              </div>
+              <div class="col s12 center">
+                  <a class="waves-effect waves-light btn-large amber darken-2"id="btnResultado">CALCULAR</a>
+              </div>
+           </div>
+        </div>
        
+        <!--Resultados-->
+        <div class='caja'id="precio" placeholder="Costo Pasaje"></div>
+        <div class='caja'type="tel" id="diferencia"placeholder="Saldo Final"></div>
 
  <!-- Link Jquery -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

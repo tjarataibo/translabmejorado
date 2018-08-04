@@ -40,11 +40,13 @@ i.iconis {
     margin-top: 8px;
 }
 .login {
-    width: 60%;
+    width: 30%;
     margin: 0 auto;
     background-color: rgb(230, 226, 226);
     padding: 20px;
     display: table-cell;
+    padding: 10%;
+    
 }
 #inicio{
     background-color: #F5AC36;
