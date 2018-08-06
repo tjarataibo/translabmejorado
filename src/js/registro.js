@@ -16,7 +16,7 @@ formulario.addEventListener('submit', eee => {
           correo: correo 
         });
         console.log('Usuario registrado con éxito');
-        location.href = '../translab/inicio.html';  
+        location.href = './inicio.html';  
       });   
   }  
 }); 
