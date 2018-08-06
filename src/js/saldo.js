@@ -41,6 +41,6 @@ function obtenerSaldo(data) {
   console.log(saldo);
 }
 
-document.getElementById('saldito').innerHTML = `$${saldoTarjeta1}`;
+document.getElementById('saldito').innerHTML = `$${Bip}`;
   
   

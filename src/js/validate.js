@@ -1,4 +1,4 @@
-window.validateEmail = function(email) {
+window.validateEmail = function enviarSubmit(evento) {
   if (email.indexOf('@') < 0) {
     return false;
   }
