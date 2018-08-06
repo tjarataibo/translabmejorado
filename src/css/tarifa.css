@@ -5,3 +5,29 @@ body{
 .container{
     padding: 10%;
 }
+
+.tableOne{
+    background-color: #ffa000;
+}
+th{
+    background-color: #424242;
+    color: white;
+    text-align: center;
+}
+.tableThree{
+    background-color: #ffa000;
+}
+th{
+    background-color: #424242;
+    color: white;
+}
+#precio{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+#diferencia{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
