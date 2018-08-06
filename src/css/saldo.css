@@ -5,3 +5,22 @@ body{
 .container{
     padding: 10%;
 }
+
+.tableOne{
+    background-color: #ffa000;
+}
+th{
+    background-color: #424242;
+    color: white;
+    text-align: center;
+}
+
+th{
+    background-color: #424242;
+    color: white;
+}
+#saldito{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
