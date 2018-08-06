@@ -2,7 +2,9 @@
     color: #F5AC36;
 
 } */
-
+body{
+    background-color:rgb(196, 208, 208);
+    }
 .container{
     padding: 10%;
 }
