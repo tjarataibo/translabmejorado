@@ -35,12 +35,11 @@ function calcularTarifa(data) {
   console.log(saldoTar1); // Hasta aquí, saldo tarjeta sin $
 }
 
+
 function obtenerSaldo(data) {
   let saldo = data['Saldo  tarjeta']; // Saldo tarjeta
       
   console.log(saldo);
 }
 
-document.getElementById('saldito').innerHTML = `$${Bip}`;
-  
-  
+document.getElementById('saldito').innerHTML = `$${saldoTar1}`;
