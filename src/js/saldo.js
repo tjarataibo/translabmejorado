@@ -13,7 +13,7 @@ function dataJson() {
   const Bip = document.getElementById('numberTar').value; // Creo a Bip como una constante que contenga numberTar, que a su vez es el id del input donde ingreso la tarjeta
   console.log(Bip); // Se me muestra el número de la tarjeta
   let url = ''; 
-  url += 'https://www.psep.cl/api/Bip.php?&'; // Api
+  url += 'http://www.psep.cl/api/Bip.php?&'; // Api
   url += `numberBip=${Bip}`; 
   fetch(url)
     .then(response =>response.json())
