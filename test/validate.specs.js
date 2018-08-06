@@ -41,7 +41,5 @@ describe('Validar contraseña', ()=>{ //Describe lo que habrá dentro de cada fu
             assert.equal(validatePassword("qwertyui"), false);
             assert.equal(validatePassword("1234567"), false);
             assert.equal(validatePassword("@1234567"), false);
-        
-  
         });
 });
