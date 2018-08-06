@@ -9,7 +9,6 @@ $(document).ready(function() {
 });
   
 // Data en formato JSON
-// Data en formato JSON
 function dataJson() {
   const Bip = document.getElementById('numberTar').value; // Creo a Bip como una constante que contenga numberTar, que a su vez es el id del input donde ingreso la tarjeta
   console.log(Bip); // Se me muestra el número de la tarjeta
