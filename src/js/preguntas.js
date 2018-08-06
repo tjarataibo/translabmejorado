@@ -1,10 +1,10 @@
-//Funcionalidad Menú
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+// Funcionalidad Menú
+$(document).ready(function() {
+  $('.sidenav').sidenav();
+});
   
-//Collapsible
-$(document).ready(function(){
+// Collapsible
+$(document).ready(function() {
   $('.collapsible').collapsible();
 });
      

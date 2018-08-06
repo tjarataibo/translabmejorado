@@ -1,5 +1,5 @@
-//Funcionalidad Menú
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+// Funcionalidad Menú
+$(document).ready(function() {
+  $('.sidenav').sidenav();
+});
   
