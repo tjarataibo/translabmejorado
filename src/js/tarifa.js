@@ -37,21 +37,21 @@ function dataJson() {
 }
   
 // Descuento de valor de pasaje en saldo existente, mostrando la diferencia
-let saldoTarjeta1;
+let saldoTar1; // Declaro una variable
 function calcularTarifa(data) {
-  let saldoTarjeta = data['Saldo  tarjeta']; 
-  saldoTarjeta1 = saldoTarjeta.replace('$', '');
-  console.log(saldoTarjeta1); // Hasta aquí, saldo tarjeta
+  let saldoTarjeta = data['Saldo  tarjeta']; // Creo una variable que contenga la información de la tarjeta a consultar. Con un espacio no funciona
+  saldoTar1 = saldoTarjeta.replace('$', ''); // Reemplazo el valor
+  console.log(saldoTar1); // Hasta aquí, saldo tarjeta sin $
 
-  let saldoRestante = (saldoTarjeta1 - tarifaSelec).toFixed(3);
+  let saldoRestante = (saldoTar1 - tarifaSelec).toFixed(3);// toFixed = El número se redondea si es necesario, y la parte fraccional se rellena con ceros si es necesario para que tenga la longitud especificada.
   console.log(saldoRestante); // Diferencia
-  let respuesta;
+  let respOnse;
   if (saldoRestante >= 0) {
-    respuesta = saldoRestante;
+    respOnse = saldoRestante;
   } else {
-    respuesta = 'Selecciona horario de viaje';
+    respOnse = 'Selecciona horario de viaje';
   }
-  document.getElementById('diferencia').innerHTML = `$${respuesta}`;
+  document.getElementById('diferencia').innerHTML = `$${respOnse}`;
 }
   
 function obtenerSaldo(data) {
