@@ -15,9 +15,8 @@
 <body>
         <!--Menú-->
         <nav class="grey darken-3"> 
-                <div id="barra"> 
-                    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
-                    
+                <div id="barra">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a> 
                 </div>
         </nav>
 
@@ -34,10 +33,10 @@
         <div class="container">
            <div class="row">
               <div class="input-field col s12">
-                  <input id="numeroTarjeta" type="text" class="validate">
+                  <input id="numberTar" type="text" class="validate">
                   <label for="password">Número de tarjeta</label>
              </div>
-              <div class="input-field col s6 white">
+              <div class="input-field col s6 white" id="tarjetas">
                   <select id="selectHora">
                     <option value="" disabled selected>Horario</option>
                     <option value="0.630">Tarifa Baja [6:00 a 6:29 hrs][20:45 a 23:00 hrs]</option>
@@ -46,7 +45,7 @@
                   </select>
                   <label>Tarifa</label>
               </div>
-              <div class="input-field col s6 white">
+              <div class="opciones input-field col s6 white">
                   <select id="selectTarjeta">
                     <option value="" disabled selected>Tarjeta</option>
                     <option value="1"></option>
@@ -63,7 +62,7 @@
        
         <!--Resultados-->
         <div class='caja'id="precio" placeholder="Costo Pasaje"></div>
-        <div class='caja'type="tel" id="diferencia"placeholder="Saldo Final"></div>
+        <div class='caja'type="tel" id="diferencia" placeholder="Saldo Final"></div>
 
  <!-- Link Jquery -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
