@@ -10,7 +10,7 @@ function enviarSubmit(evento) {
   if (correo.length !== 0 && contrasena.length !== 0) {
     firebase.auth().signInWithEmailAndPassword(correo, contrasena)
       .then(response => {
-        location.href = '../inicio.html';
+        location.href = '../translab/inicio.html';
       })
       .catch(function(error) {
         let errorCode = error.code;
