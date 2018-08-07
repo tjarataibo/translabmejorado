@@ -31,7 +31,7 @@ let saldoTar1; // Declaro una variable
 function tarifa(data) {
   let saldoTarjeta = data['Saldo  tarjeta']; // Creo una variable que contenga la información de la tarjeta a consultar. Con un espacio no funciona
   saldoTar1 = saldoTarjeta.replace('$', ''); // Reemplazo el valor
-  document.getElementById('saldito').innerHTML = `$${saldoTar1}`;
+  document.getElementById('saldito').innerHTML = `$${saldoTar1}`; // Pinto saldo en pantalla
   console.log(saldoTar1); // Hasta aquí, saldo tarjeta sin $
 }
 
