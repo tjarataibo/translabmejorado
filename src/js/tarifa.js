@@ -9,13 +9,13 @@ $(document).ready(function() {
 });
   
 // Selecciona una hora para realizar cálculo
-let tarifaSelec; // Creo una variable para seleccionar tarifa
-let seleccionado = document.getElementById('selectHora'); // selectHora = Selección de hora
-seleccionado.addEventListener('change', function() { // let seleccionado contendrá la selección de hora (selectHora)
-  tarifaSelec = seleccionado.options[seleccionado.selectedIndex].value; // tarifaSelec contendrá la misma let que lo contiene con una opción que pueda elegir de tarifa 
+let selecTar; // Creo una variable para seleccionar tarifa
+let selector = document.getElementById('selectHora'); // selectHora = Selección de hora
+selector.addEventListener('change', function() { // let selector contendrá la selección de hora (selectHora)
+  selecTar = selector.options[selector.selectedIndex].value; // tarifaSelec contendrá la misma let que lo contiene con una opción que pueda elegir de tarifa 
   // Me entrega el resultado del precio del pasaje seleccionado
-  document.getElementById('precio').innerHTML = `$${tarifaSelec * 1000}`; //* 1000 porque lo ingresé en decimales. precio es el id de la caja donde lo imprimo en pantalla
-  console.log(tarifaSelec);
+  document.getElementById('precio').innerHTML = `$${selecTar * 1000}`; //* 1000 porque lo ingresé en decimales. precio es el id de la caja donde lo imprimo en pantalla
+  console.log(selecTar);
 });
   
 document.getElementById('btnResultado').addEventListener('click', dataJson); // Botón para calcular
@@ -30,20 +30,26 @@ function dataJson() {
   fetch(url)
     .then(response =>response.json())
     .then(data => {
-      calcularTarifa(data); 
-      obtenerSaldo(data);
+      tarifa(data); 
+      saldos(data);
     })
     .catch(error => console.log(error));
+}
+
+function saldos(data) {
+  let saldo = data['Saldo  tarjeta']; // Saldo tarjeta
+      
+  console.log(saldo);
 }
   
 // Descuento de valor de pasaje en saldo existente, mostrando la diferencia
 let saldoTar1; // Declaro una variable
-function calcularTarifa(data) {
+function tarifa(data) {
   let saldoTarjeta = data['Saldo  tarjeta']; // Creo una variable que contenga la información de la tarjeta a consultar. Con un espacio no funciona
   saldoTar1 = saldoTarjeta.replace('$', ''); // Reemplazo el valor
   console.log(saldoTar1); // Hasta aquí, saldo tarjeta sin $
 
-  let saldoRestante = (saldoTar1 - tarifaSelec).toFixed(3);// toFixed = El número se redondea si es necesario, y la parte fraccional se rellena con ceros si es necesario para que tenga la longitud especificada.
+  let saldoRestante = (saldoTar1 - selecTar).toFixed(3);// toFixed = El número se redondea si es necesario, y la parte fraccional se rellena con ceros si es necesario para que tenga la longitud especificada.
   console.log(saldoRestante); // Diferencia
   let respOnse;
   if (saldoRestante >= 0) {
@@ -53,10 +59,5 @@ function calcularTarifa(data) {
   }
   document.getElementById('diferencia').innerHTML = `$${respOnse}`;
 }
-  
-function obtenerSaldo(data) {
-  let saldo = data['Saldo  tarjeta']; // Saldo tarjeta
-      
-  console.log(saldo);
-}
+
   
