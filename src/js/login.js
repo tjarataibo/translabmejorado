@@ -1,9 +1,8 @@
 let formulario = document.getElementById('formularioLogin');
 // console.log(formulario);
-// manejar algo quiere decir que controlar lo que contiene
-// el evento es un momento
+// El evento es un momento
 function enviarSubmit(evento) {
-  // preventDefault() detiene el evento, en este caso el envio no ocurre.
+  // preventDefault() detiene el evento, en este caso el envío no ocurre.
   evento.preventDefault();
   const correo = document.getElementById('emailLogin').value;
   const contrasena = document.getElementById('passwordLogin').value;
@@ -18,5 +17,5 @@ function enviarSubmit(evento) {
       });
   };
 }
-// se ejecuta la funcion
+// Se ejecuta la función
 formulario.addEventListener('submit', enviarSubmit);

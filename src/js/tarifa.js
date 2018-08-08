@@ -24,6 +24,12 @@ function dataJson() {
     .catch(error => console.log(error));
 }
 
+function saldos(data) {
+  let saldo = data['Saldo  tarjeta']; // Saldo tarjeta
+      
+  console.log(saldo);
+}
+
 // Selecciona una hora para realizar cálculo
 let selecTar; // Creo una variable para seleccionar tarifa
 let selector = document.getElementById('selectHora'); // selectHora = Selección de hora
@@ -36,13 +42,6 @@ selector.addEventListener('change', function() { // let selector contendrá la s
   
 document.getElementById('btnResultado').addEventListener('click', dataJson); // Botón para calcular
   
-
-function saldos(data) {
-  let saldo = data['Saldo  tarjeta']; // Saldo tarjeta
-      
-  console.log(saldo);
-}
-  
 // Descuento de valor de pasaje en saldo existente, mostrando la diferencia
 let saldoTar1; // Declaro una variable
 function tarifa(data) {
@@ -50,15 +49,16 @@ function tarifa(data) {
   saldoTar1 = saldoTarjeta.replace('$', ''); // Reemplazo el valor
   console.log(saldoTar1); // Hasta aquí, saldo tarjeta sin $
 
-  let saldoRestante = (saldoTar1 - selecTar).toFixed(3);// toFixed = El número se redondea si es necesario, y la parte fraccional se rellena con ceros si es necesario para que tenga la longitud especificada. Si lo ponía en 2, me manda número decimal
+  // let saldoRestante = (saldoTar1 - selecTar).toFixed(3);// toFixed = El número se redondea si es necesario, y la parte fraccional se rellena con ceros si es necesario para que tenga la longitud especificada. Si lo ponía en 2, me manda número decimal
+  let saldoRestante = parseInt(saldoTar1) - parseInt(selecTar);
   console.log(saldoRestante); // Diferencia
   let respOnse;
   if (saldoRestante >= 0) {
     respOnse = saldoRestante;
   } else {
-    respOnse = 'Selecciona horario de viaje';
+    respOnse = 'saldo insuficiente para realizar viaje';
   }
-  document.getElementById('diferencia').innerHTML = `$${respOnse}`; // Pinto saldo restante en pantalla
+  document.getElementById('diferencia').innerHTML = `$${respOnse}`; // Pinto saldo restante o saldo insuficiente en pantalla
 }
 
   
