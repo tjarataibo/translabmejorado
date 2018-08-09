@@ -82,6 +82,9 @@ $(document).ready(function() {
   });
 });
  */
+
+// Guardando tarjetas en un input mientras
+
 let arreglo = [];
 btnAgregarTarjeta.addEventListener('click', tarjetaGuar);
 
@@ -104,10 +107,11 @@ function tarjetaGuar() {
   // }
   // tarjetaGuardadaEnSelect += '</select>';
 
-  if (arreglo >= 0) {
-    respOnse = arreglo;
-  } else {
-    respOnse = 'Ingresa tarjeta correcta';
-  }
-  document.getElementById('tarjetas').innerHTML = `$${respOnse}`;
+  // if (arreglo >= 0) {
+  //   respOnse = arreglo;
+  // } else {
+  //   respOnse = 'Ingresa tarjeta correcta';
+  // }
+  // document.getElementById('tarjetas').innerHTML = `$${respOnse}`;
 }
+

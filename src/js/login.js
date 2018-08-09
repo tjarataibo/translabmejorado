@@ -13,7 +13,7 @@ function enviarSubmit(evento) {
       })
       .catch(function(error) {
         let errorCode = error.code;
-        alert(errorCode);
+        alert('Se permiten sólo números, máximo 8');
       });
   };
 }
