@@ -103,7 +103,7 @@ describe('Validar contraseña', ()=>{ // Describe lo que habrá dentro de cada f
 
 // Validar tarjeta
 describe('Validar tarjeta', () =>{
-  describe('verificar que contenga máximo 10 caracteres numéricos y no contenga espacio en blanco', () =>{
+  describe('verificar que contenga máximo 10 carácteres numéricos y no contenga espacios', () =>{
     it('Debería tener máximo 10 carácteres', () =>{
       assert.equal(validateCard('0123456789'), true);
       assert.equal(validateCard('12345678'), true);
