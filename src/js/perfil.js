@@ -97,6 +97,5 @@ function tarjetaGuar() {
   let tarjetaAlmacenada = document.getElementById('tarjetas');
 
   tarjetaAlmacenada.setAttribute('value', arreglo[0]);
-
 }
 

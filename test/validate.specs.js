@@ -80,18 +80,26 @@ describe('Validar emails', () => {
       assert.equal(validateEmail('tjarataibo@gmail.com'), true);
       assert.equal(validateEmail('.com@qwerty'), false);
     });
-    it('Debería la contraseña ser sólo números', () => { 
-      assert.equal(validatePass('12345678'), true); 
-      assert.equal(validatePass('1234D678'), false);
-    });
-    it('Debería el correo tener sólo un arroba', ()=>{ // Caso de prueba
-      assert.equal(validateEmail('qwerty#@qwerty.com'), false); // assert.equal verifica que el parámetro 1 sea igual al parámetro 2
-      assert.equal(validateEmail('%qwerty@@qwerty.com'), false);
-      assert.equal(validateEmail('qwerty&.com'), false);
+    it('Tiene un punto y luego sólo carácteres del alfabeto', ()=>{
+      assert.equal(validateEmail('qwerty@qwerty.cl'), true);
+      assert.equal(validateEmail('qwerty@qwerty'), false);
+      assert.equal(validateEmail('qwerty@qwerty.'), false);
     });
   });
 });
 
+// Validar contraseña
+describe('Validar contraseña', ()=>{ // Describe lo que habrá dentro de cada función
+  describe('Debería verificar que contenga máximo 8 carácteres', ()=>{
+    it('Debería aceptar sólo números', ()=>{ // Caso de prueba
+      assert.equal(validatePassword('12345678'), true); // assert.equal verifica que el parámetro 1 sea igual al parámetro 2
+      assert.equal(validatePassword('123456789'), false);
+      assert.equal(validatePassword('qwertyui'), false);
+    //   assert.equal(validatePassword('1234567'), false);
+    //   assert.equal(validatePassword('@1234567'), false);
+    });
+  });
+});
 
 // Validar tarjeta
 describe('Validar tarjeta', () =>{

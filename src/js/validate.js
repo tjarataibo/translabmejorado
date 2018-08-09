@@ -29,9 +29,9 @@ window.validateEmail = (email) => {
 
 window.validatePassword = (password) => {
   console.log(password);
-  if (password.toString().length <= 8) { // se comprueba el largo, maximo 8 
-    if (isNaN(password) === false) { // se comprueba que sean numeros
-      if (!password.trim() === ' ') { // se comprueba que no contenga espacios
+  if (password.toString().length <= 8) { // Se verifica que contenga máximo 8 números 
+    if (isNaN(password) === false) { // Si no son números, no se acepta
+      if (!password.trim() === ' ') { // Se verifica que no contenga espacios
         return true;
       } else {
         return false;
@@ -47,7 +47,7 @@ window.validatePassword = (password) => {
 window.validateCard = (tarjeta) => {
   console.log(tarjeta);
   if (tarjeta.toString().length <= 10) {
-    if (isNaN(bip) === false) {
+    if (isNaN(tarjeta) === false) {
       if (!tarjeta.toString().trim() === ' ') {
         return true;
       } else {
