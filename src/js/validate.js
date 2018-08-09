@@ -29,17 +29,19 @@ window.validateEmail = (email) => {
 };
 
 // Validar contraseña
-window.validatePassword = (password) => {
-  console.log(password);
-  if (password.toString().length <= 8) {
-    return true; // Se verifica que contenga máximo 8 números 
-  }
-  if (isNaN(tarjeta) === false) {
+window.validatePassword = function(password) {
+  if (password.length > 8) {
     return false;
   }
-  if (!password.trim() === ' ') { // Se verifica que no contenga espacios
-    return true;
+	
+  if (typeof(password) !== 'number') {
+    return false;
   }
+
+  if (!password.trim() === ' ') { // Se verifica que no contenga espacios
+    return false;
+  }
+  return true;
 };
 
 
