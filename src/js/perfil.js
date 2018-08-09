@@ -83,7 +83,7 @@ $(document).ready(function() {
 });
  */
 
-// Guardando tarjetas en un input mientras
+// Guardando tarjeta
 
 let arreglo = [];
 btnAgregarTarjeta.addEventListener('click', tarjetaGuar);
