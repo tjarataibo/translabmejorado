@@ -94,24 +94,9 @@ function tarjetaGuar() {
   console.log(arreglo);
   numberTar.value = '';
   
-  let tarjetaAlmacenada = document.createElement('input'); 
-  tarjetaAlmacenada.setAttribute('type', 'tel');
-  tarjetaAlmacenada.setAttribute('id', 'tarjetasGuardadas');
+  let tarjetaAlmacenada = document.getElementById('tarjetas');
+
   tarjetaAlmacenada.setAttribute('value', arreglo[0]);
-  document.body.appendChild(tarjetaAlmacenada);
 
-  // let tarjetaGuardadaEnSelect = '';
-  // tarjetaGuardadaEnSelect += '<select id="selectTarjeta">';
-  // for (i = 0;i < arreglo.length;i++) {
-  //   tarjetaGuardadaEnSelect += `<option value="">${arreglo[i]}</option>`;
-  // }
-  // tarjetaGuardadaEnSelect += '</select>';
-
-  // if (arreglo >= 0) {
-  //   respOnse = arreglo;
-  // } else {
-  //   respOnse = 'Ingresa tarjeta correcta';
-  // }
-  // document.getElementById('tarjetas').innerHTML = `$${respOnse}`;
 }
 
