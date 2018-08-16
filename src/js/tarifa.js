@@ -50,7 +50,7 @@ function tarifa(data) {
   console.log(saldoTar1); // Hasta aquí, saldo tarjeta sin $
 
   // let saldoRestante = (saldoTar1 - selecTar).toFixed(3);// toFixed = El número se redondea si es necesario, y la parte fraccional se rellena con ceros si es necesario para que tenga la longitud especificada. Si lo ponía en 2, me manda número decimal
-  let saldoRestante = parseInt(saldoTar1) - parseInt(selecTar);
+  let saldoRestante = (saldoTar1) - (selecTar);
   console.log(saldoRestante); // Diferencia
   let respOnse;
   if (saldoRestante >= 0) {
